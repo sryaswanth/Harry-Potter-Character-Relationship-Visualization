@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+circle {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+text {
+  font: bold 12px sans-serif;
+}
+
+.wrapper {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  vertical-align: top; 
+  overflow: hidden; 
+  
+}
+
+.test {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 5vw;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  padding: 10px;
+  font-style: italic;
+}
+.headcls{text-align: center;font-weight: bold; font-size: 24px;padding-top:10px;}
+</style> 
+<body style="background-image:url('img/hpo.png');background-size: contain;">
+  <div class="headcls">Harry Potter characters negative relation Radial Graph</div>
+  <div style="text-align: center;padding-top:10px;">
+    <input type="radio" name="Graph" id="radio_network" value="1"  onclick="OnChangeRadio (this)" /> 
+    <label for="radio_pos">Network Graph</label>
+    <input type="radio" name="Graph" id="radio_radial" value="2" checked="true" onclick="OnChangeRadio (this)" /> 
+    <label for="radio_neg">Radial Graph </label>
+    <input type="radio" name="Graph" id="radio_bar" value="3" onclick="OnChangeRadio (this)" /> 
+    <label for="radio_neg">Bar Graph </label>
+  </div>
+   <div id="dynbio"> </div>    
+<script src="js/d3min3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/Radial.js"></script>
+<script>
+
+</script>

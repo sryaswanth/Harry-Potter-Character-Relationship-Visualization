@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+    <style>
+    .axis { font: 12px sans-serif;font-weight: bold; }
+    .headcls{text-align: center;font-weight: bold; font-size: 24px;padding-top:15px;}
+    </style>
+  
+  </head>
+  <body style="background-image:url('img/hpE.png');background-size: cover;">
+    <div class="col-sm-12"> 
+      
+    <div class="headcls">Harry Potter Movies Production Cost Vs Box Office Collection</div>
+    <div style="text-align: center;">
+      <input type="radio" name="Graph" id="radio_network" value="1"  onclick="OnChangeRadio (this)" /> 
+      <label for="radio_pos">Network Graph</label>
+      <input type="radio" name="Graph" id="radio_radial" value="2" onclick="OnChangeRadio (this)" /> 
+      <label for="radio_neg">Radial Graph </label>
+      <input type="radio" name="Graph" id="radio_bar" value="3" checked="true" onclick="OnChangeRadio (this)" /> 
+      <label for="radio_neg">Bar Graph </label>
+    </div>
+    <div id='d3Id'></div>
+    
+
+  </div>
+  <script src="js/d3min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/Bar.js"></script>
+</body>
+</html>
+
+

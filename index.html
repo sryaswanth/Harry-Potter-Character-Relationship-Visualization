@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.nodes line {
+  stroke: rgba(105, 105, 105, 0.993);
+  stroke-opacity: 0.6;
+}
+.nodes circle {
+  stroke: #3d3d3d;
+  stroke-width: 1.5px;
+}
+text {
+  font-family: sans-serif;
+  font-size: 12px; 
+}
+.headcls{text-align: center;font-weight: bold; font-size: 24px;padding-top:15px;}
+</style>
+<body style="background-image:url('img/hpS.png');background-size: cover;">
+  <div class="headcls">Harry Potter Characters Positive Relation Network Graph</div>
+  <div id="dyncnt"></div> 
+<div style="text-align: center;">
+  <input type="radio" name="Graph" id="radio_network" value="1" checked="true" onclick="OnChangeRadio (this)" /> 
+  <label for="radio_pos">Network Graph</label>
+  <input type="radio" name="Graph" id="radio_radial" value="2" onclick="OnChangeRadio (this)" /> 
+  <label for="radio_neg">Radial Graph </label>
+  <input type="radio" name="Graph" id="radio_bar" value="3" onclick="OnChangeRadio (this)" /> 
+  <label for="radio_neg">Bar Graph </label>
+</div>
+</body>
+<svg width="1500" height="700" id="poschart"></svg>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/d3min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/Network.js"></script>
+</html>
